@@ -10,12 +10,14 @@ public class VideoTest {
 	
 	@Test
 	void test() {
-		Video v1= new Video(13, "PerrosGraciosos", "Alfonso", false);
-		v1.ampliarDuracion(3);
-		v1.hacerPublico();
+		Video v1= new Video(10, "PerrosGraciosos", "Alfonso", false);
+		v1.ampliarDuracion(5);
 		
-		assertEquals(true, v1.getPublicoOPrivado());
-		assertEquals(16, v1.getDuracion());
+		assertEquals(15, v1.getDuracion());
+		
+		v1.reducirDuracion(10);
+		
+		assertEquals(5, v1.getDuracion());
 	}
 }
 

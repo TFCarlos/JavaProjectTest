@@ -54,14 +54,6 @@ public class Video {
 
 	// Methods
 	
-	public void cambiarNombre(String tituloNuevo) {
-		setTitulo(tituloNuevo);
-	}
-	
-	public void hacerPublico() {
-		setPublicoOPrivado(true);
-	}
-	
 	public void ampliarDuracion(int tiempo) {
 		setDuracion(this.getDuracion()+tiempo);
 	}
