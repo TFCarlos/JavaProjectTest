@@ -3,7 +3,7 @@ package Helper;
 import Model.Directo;
 import Model.Video;
 
-public class VideoHelper {
+public class Helper {
 	
 	public void pruebaVideo() {
 	Video vprueba= new Video(10, "video", "prueba", false);
